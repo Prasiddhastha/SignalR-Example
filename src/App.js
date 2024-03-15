@@ -25,15 +25,7 @@ const NotificationComponent = () => {
         notification,
       ]);
     });
-
-    return () => {
-      // Cleanup - stop the connection when component unmounts
-      connection
-        .stop()
-        .then(() => console.log("SignalR Connection Stopped"))
-        .catch((err) => console.error("SignalR Stop Connection Error: ", err));
-    };
-  }, []); // Run effect only once on mount
+  }, []);
 
   return (
     <div>
