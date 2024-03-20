@@ -14,13 +14,13 @@ const NotificationComponent = () => {
     let hubUrl = '';
     switch (role) {
       case 'admin':
-        hubUrl = 'https://localhost:44319/admin-hub';
+        hubUrl = 'https://pharma-release.server247.info/admin-hub';
         break;
       case 'manager':
-        hubUrl = 'https://localhost:44319/manager-hub';
+        hubUrl = 'https://pharma-release.server247.info/manager-hub';
         break;
       case 'user':
-        hubUrl = 'https://localhost:44319/user-hub';
+        hubUrl = 'https://pharma-release.server247.info/user-hub';
         break;
       default:
         hubUrl = ''; // Default URL or handle error
